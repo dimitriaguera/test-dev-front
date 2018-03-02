@@ -1,0 +1,181 @@
+#mobile-menu {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  transition: left 0.3s ease-in, opacity 0.2s ease-in;
+  z-index: 1000;
+
+  &.is-open {
+    left: 0;
+    opacity: 1;
+  }
+
+  #nav-mobile-menu {
+    width: 800px;
+    max-width: 100%;
+
+    .nav-element {
+      display: block;
+      font-weight: 700;
+      text-align: center;
+      border-top: 1px solid $noir-2;
+
+      a,
+      &.search-nav li {
+        line-height: 5em;
+        display: inline-block;
+
+        &:hover,
+        &:focus {
+          background-color: $gris-1;
+        }
+      }
+
+      &.principal-nav {
+        text-transform: uppercase;
+
+        a {
+          width: 100%;
+          color: $noir-1;
+          cursor: pointer;
+        }
+      }
+
+      &.second-nav {
+        li {
+          display: inline-block;
+        }
+
+        a {
+          font-size: 1.6em;
+          padding: 0 0.5em;
+
+          &.icon-nav-1 {
+            color: $rose-1;
+          }
+
+          &.icon-nav-2 {
+            color: $bleu-1;
+          }
+
+          &.icon-nav-3 {
+            color: $noir-1;
+          }
+        }
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  }
+
+  @include breakpoint(desktop) {
+    display: none;
+  }
+}
+
+#header-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  z-index: 999;
+
+  #logo,
+  #nav-large-menu {
+    display: none;
+  }
+
+  #open-menu {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  @include breakpoint(desktop) {
+    background-color: $color-bg-menu-large;
+
+    #open-menu {
+      display: none;
+    }
+
+    #logo {
+      display: inline-block;
+      position: absolute;
+      margin-top: 0.5em;
+      left: 10%;
+
+      span {
+        font-size: 4em;
+      }
+    }
+
+    #nav-large-menu {
+      display: block;
+      padding-left: 25%;
+      text-align: right;
+
+      .nav-element {
+        display: inline-block;
+        margin-right: 3em;
+        font-weight: 700;
+        vertical-align: bottom;
+
+        a,
+        &.search-nav li{
+          display: inline-block;
+          line-height: 5.5em;
+          font-size: 0.7em;
+          padding: 0 1em;
+        }
+
+        &.principal-nav {
+          text-transform: uppercase;
+
+          a {
+            color: $noir-1;
+          }
+        }
+
+        &.second-nav a {
+
+          span {
+            font-size: 1.6em;
+          }
+
+          &.icon-nav-1 {
+            color: $rose-1;
+          }
+
+          &.icon-nav-2 {
+            color: $bleu-1;
+          }
+
+          &.icon-nav-3 {
+            color: $noir-1;
+          }
+        }
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(big-desktop) {
+    font-size: 2.5rem;
+  }
+}

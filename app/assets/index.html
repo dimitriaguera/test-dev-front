@@ -9,19 +9,73 @@
     <script>require('initialize');</script>
   </head>
   <body>
-    <div id="strate-1" class="row">
-      <div class="col-4">
-        Hello World
+
+  <header>
+    <div id="background-overlay" class="rose-gradient"></div>
+    <div id="header-menu">
+      <div id="logo">
+        <span class="icon-logo_fakecity"></span>
       </div>
-      <div class="col-4">
-        Hello World
-      </div>
-      <div class="col-4">
-        Hello World
-      </div>
-      <div class="col-4">
-        Hello World
-      </div>
+      <nav id="nav-large-menu">
+        <ul class="nav-element principal-nav">
+          <li><a title="Découvrir" href="#">Découvrir</a></li>
+          <li><a title="Séjourner" href="#">Séjourner</a></li>
+          <li><a title="Se divertir" href="#">Se divertir</a></li>
+          <li><a title="Pratique" href="#">Pratique</a></li>
+        </ul>
+        <ul class="nav-element second-nav">
+          <li><a title="Agenda" href="#" class="icon-nav-1"><span class="icon-calendar"></span></a></li>
+          <li><a title="Carte interactive" href="#" class="icon-nav-2"><span class="icon-carte_interactive"></span></a></li>
+          <li><a title="Château ?" href="#" class="icon-nav-3"><span class="icon-chateau"></span></a></li>
+        </ul>
+        <ul class="nav-element search-nav">
+          <li>
+            <button class="btn btn-search"><span class="icon-loupe"></span></button>
+          </li>
+        </ul>
+      </nav>
+      <button id="open-menu" class="btn btn-menu btn-open" type="button"><span class="icon-menu"></span></button>
     </div>
+
+    <div id="#content-wrapper ">
+    </div>
+
+  </header>
+
+  <section>
+    <div class="block-test">
+      nonnonln
+    </div>
+  </section>
+  <section>
+    <div class="block-test">
+      nonnonln
+    </div>
+  </section>
+
+  <div id="mobile-menu">
+    <button id="close-menu" type="button" class="btn btn-menu btn-close"><span class="icon-x"></span></button>
+    <nav id="nav-mobile-menu" class="x-center">
+      <ul class="nav-element principal-nav">
+        <li><a title="Découvrir" href="#">Découvrir</a></li>
+        <li><a title="Séjourner" href="#">Séjourner</a></li>
+        <li><a title="Se divertir" href="#">Se divertir</a></li>
+        <li><a title="Pratique" href="#">Pratique</a></li>
+      </ul>
+      <ul class="nav-element second-nav">
+        <li><a title="Agenda" href="#" class="icon-nav-1"><span class="icon-calendar"></span></a></li>
+        <li><a title="Carte interactive" href="#" class="icon-nav-2"><span class="icon-carte_interactive"></span></a></li>
+        <li><a title="Château ?" href="#" class="icon-nav-3"><span class="icon-chateau"></span></a></li>
+      </ul>
+      <ul class="nav-element search-nav">
+        <li>
+          <button class="btn btn-search"><span class="icon-loupe"></span></button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script>require('scripts/menu');</script>
+
   </body>
 </html>

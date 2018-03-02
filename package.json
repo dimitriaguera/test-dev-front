@@ -11,8 +11,10 @@
   "dependencies": {},
   "devDependencies": {
     "auto-reload-brunch": "^2",
+    "babel-brunch": "^6.1.1",
     "brunch": "^2",
     "clean-css-brunch": "^2",
+    "imagemin-brunch": "^1.1.0",
     "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "^2"
   }

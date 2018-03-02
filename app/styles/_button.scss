@@ -1,0 +1,29 @@
+.btn {
+  border: none;
+  background: none repeat scroll 0 0 transparent;
+  border-spacing: 0;
+  text-decoration: none;
+  -webkit-user-select: none; /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+
+  &.btn-menu {
+    display: inline-block;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 50%;
+  }
+
+  &.btn-search {
+    padding: 0;
+
+    span {
+      padding: 0 20px;
+      border-left: 1px solid $noir-2;
+      border-right: 1px solid $noir-2;
+    }
+  }
+}

@@ -27,6 +27,7 @@
 html {
   font-family: sans-serif; // 2
   line-height: 1.15; // 3
+  font-size: $font-size-base;
   -webkit-text-size-adjust: 100%; // 4
   -ms-text-size-adjust: 100%; // 4
   -ms-overflow-style: scrollbar; // 5
@@ -57,7 +58,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
   margin: 0; // 1
   font-family: $font-family-base;
-  font-size: $font-size-base;
+  font-size: $font-size-body-base;
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   color: $color-font-base;

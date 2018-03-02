@@ -1,19 +1,29 @@
-#strate-1 {
-  background: $color-bg-1;
+html {
+  overflow-x: hidden;
+}
 
-  .bold {
-    font-weight: 700;
+body {
+  @include breakpoint(desktop) {
+    font-size: 1.4rem;
   }
+}
 
-  .black {
-    font-weight: 900;
-  }
+.center {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
 
-  .light {
-    font-weight: 300;
-  }
+.x-center {
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .italic {
-    font-style: italic;
-  }
+.block-test {
+  background: red;
+  display: block;
+  height: 400px;
+  width: 25%;
 }
