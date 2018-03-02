@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'custom_font_icones';
+  src:  url('fonts/custom_font_icones.eot?jlppuq');
+  src:  url('fonts/custom_font_icones.eot?jlppuq#iefix') format('embedded-opentype'),
+  url('fonts/custom_font_icones.ttf?jlppuq') format('truetype'),
+  url('fonts/custom_font_icones.woff?jlppuq') format('woff'),
+  url('fonts/custom_font_icones.svg?jlppuq#custom_font_icones') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'custom_font_icones' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e914";
+}
+.icon-x:before {
+  content: "\e915";
+}
+.icon-ampoule:before {
+  content: "\e900";
+}
+.icon-billetterie:before {
+  content: "\e901";
+}
+.icon-brochures:before {
+  content: "\e902";
+}
+.icon-calendar:before {
+  content: "\e903";
+}
+.icon-carte_interactive:before {
+  content: "\e904";
+}
+.icon-chateau:before {
+  content: "\e905";
+}
+.icon-enveloppe:before {
+  content: "\e906";
+}
+.icon-Facebook:before {
+  content: "\e907";
+}
+.icon-famille:before {
+  content: "\e908";
+}
+.icon-fleche:before {
+  content: "\e909";
+}
+.icon-flower:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-Instagram:before {
+  content: "\e90b";
+}
+.icon-logo_fakecity:before {
+  content: "\e90c";
+}
+.icon-loupe:before {
+  content: "\e90d";
+}
+.icon-marqueur:before {
+  content: "\e90e";
+}
+.icon-panier:before {
+  content: "\e90f";
+}
+.icon-panneau_circuits:before {
+  content: "\e910";
+}
+.icon-pastille:before {
+  content: "\e911";
+}
+.icon-voiture:before {
+  content: "\e912";
+}
+.icon-YouTube:before {
+  content: "\e913";
+}
