@@ -27,3 +27,28 @@ body {
   height: 400px;
   width: 25%;
 }
+
+.section-title {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding-top: 3rem;
+  background: $blanc-1;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .title {
+    text-transform: uppercase;
+  }
+
+  &.bleu {
+    .icon-title {
+      color: $bleu-1
+    }
+  }
+}
+

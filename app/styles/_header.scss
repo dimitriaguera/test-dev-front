@@ -33,10 +33,10 @@ header {
     .head-content-logo {
       position: relative;
       font-size: 9rem;
-      line-height: 1;
+      line-height: 0;
 
       .fleur {
-        font-size: 1em;
+        font-size: 0.9em;
       }
       .pastille {
         font-size: 1.3em;
@@ -49,6 +49,7 @@ header {
 
       h1 {
         font-size: calc(60px + 44 * (100vw - 320px) / 1180);
+        font-weight: 100;
       }
     }
 

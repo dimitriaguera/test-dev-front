@@ -3,6 +3,14 @@
   width: 100%;
   @include clearfix;
 
+  &.row-center {
+    text-align: center;
+  }
+
+  &.maxed {
+    max-width: 1400px;
+  }
+
   [class*="col-"]  {
     display: block;
     float: left;
@@ -29,5 +37,26 @@
     @include breakpoint(desktop) {
       width: 25%;
     }
+  }
+}
+
+.flex-row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  &.maxed {
+    max-width: 1400px;
+  }
+}
+
+.has-pad-20 {
+  padding: 0 1rem 1rem 1rem;
+
+  @include breakpoint(tablet) {
+    padding: 0 2rem 2rem 2rem;
   }
 }
