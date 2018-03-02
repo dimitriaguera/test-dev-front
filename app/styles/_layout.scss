@@ -1,0 +1,33 @@
+.row {
+  position: relative;
+  width: 100%;
+  @include clearfix;
+
+  [class*="col-"]  {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .col-2 {
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+  }
+
+  .col-3 {
+    @include breakpoint(tablet) {
+      width: 33.33333%;
+    }
+  }
+
+  .col-4 {
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+
+    @include breakpoint(desktop) {
+      width: 25%;
+    }
+  }
+}
