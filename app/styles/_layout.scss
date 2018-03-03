@@ -1,0 +1,70 @@
+.row {
+  position: relative;
+  width: 100%;
+  @include clearfix;
+
+  &:not(.no-bottom) {
+    margin-bottom: 5rem;
+  }
+
+  &.row-center {
+    text-align: center;
+  }
+
+  &.maxed {
+    max-width: 1400px;
+  }
+
+  [class*="col-"]  {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  .col-2 {
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+  }
+
+  .col-3 {
+    &.no-retract {
+      width: 33.33333%;
+    }
+
+    @include breakpoint(tablet) {
+      width: 33.33333%;
+    }
+  }
+
+  .col-4 {
+    @include breakpoint(tablet) {
+      width: 50%;
+    }
+
+    @include breakpoint(desktop) {
+      width: 25%;
+    }
+  }
+}
+
+.flex-row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+
+  &.maxed {
+    max-width: 1400px;
+  }
+}
+
+.has-pad-20 {
+  padding: 0 1rem 1rem 1rem;
+
+  @include breakpoint(tablet) {
+    padding: 0 2rem 2rem 2rem;
+  }
+}

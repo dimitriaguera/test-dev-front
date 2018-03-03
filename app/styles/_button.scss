@@ -29,16 +29,30 @@
   }
 
   &.btn-standard {
+    position: relative;
     border-radius: 2rem;
     line-height: 3.7rem;
     text-transform: uppercase;
-    padding: 0 2.5rem;
-    border: 1px solid $noir-1;
-    color: $noir-1;
+    padding: 0 4rem 0 2.5rem;
+    border: 1px solid $noir;
+    color: $noir;
+    margin-bottom: 1rem;
 
     .icon {
       display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 1rem;
       transform: rotate(-90deg);
+      line-height: 3.7rem;
+    }
+
+    &.little {
+      line-height: 3rem;
+      font-size: 1.2rem;
+      .icon {
+        line-height: 3rem;
+      }
     }
 
     &.btn-rose {
@@ -51,6 +65,16 @@
       &.btn-negatif {
         background-color: $bleu-1;
         color: $blanc-1;
+      }
+    }
+
+    &.btn-blanc {
+      border-color: $blanc-1;
+      color: $blanc-1;
+
+      &.negatif {
+        background-color: $blanc-1;
+        color: $noir;
       }
     }
 
