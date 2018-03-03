@@ -77,3 +77,134 @@
     padding: 2rem;
   }
 }
+
+.side-img-card {
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+
+  .side-img-card-inner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    background-color: $gris-1;
+
+    .side-img-card-illus {
+      width: 100%;
+      margin-bottom: 2rem;
+      //min-width: 300px;
+
+      .img-inner {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 150%;
+          height: auto;
+        }
+      }
+    }
+
+    .side-img-card-cont {
+      width: 100%;
+      //min-width: 300px;
+      display: inline-block;
+      text-align: center;
+      font-weight: 200;
+
+      .text {
+        display: inline-block;
+        margin-bottom: 2rem;
+      }
+
+      .title {
+        display: inline-block;
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .row {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    padding: 2rem;
+
+    .side-img-card-illus {
+      width: 50%;
+    }
+
+    .side-img-card-cont {
+      width: 50%;
+    }
+  }
+
+  @include breakpoint(desktop) {
+    width: 50%;
+  }
+}
+
+.mini-card {
+  position: relative;
+  width: 400px;
+  max-width: 100%;
+  padding: 0 2rem 4rem 2rem;
+
+  .mini-card-inner {
+    position: relative;
+    padding: 2rem;
+    background-color: $gris-1;
+    @include clearfix;
+
+    .big-icon {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 33.3333%;
+      font-size: 9rem;
+      text-align: center;
+      color: $bleu-1;
+    }
+
+    .text {
+      display: block;
+      width: 100%;
+      padding-left: 33.3333%;
+      font-size: 2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-align: center;
+
+      .icon {
+        display: inline-block;
+        width: 100%;
+        transform: rotate(-90deg);
+        color: $bleu-1;
+      }
+    }
+  }
+
+  &.negatif {
+    .mini-card-inner {
+      background-color: $bleu-1;
+
+      .big-icon,
+      .text .icon {
+        color: $blanc-1;
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    //padding: 2rem;
+  }
+}

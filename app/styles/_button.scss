@@ -44,5 +44,18 @@
     &.btn-rose {
       border-color: $rose-1;
     }
+
+    &.btn-bleu {
+      border-color: $bleu-1;
+
+      &.btn-negatif {
+        background-color: $bleu-1;
+        color: $blanc-1;
+      }
+    }
+
+    &.btn-marron {
+      border-color: $marron-1;
+    }
   }
 }
