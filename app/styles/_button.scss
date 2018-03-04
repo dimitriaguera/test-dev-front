@@ -28,6 +28,17 @@
     }
   }
 
+  &.btn-round {
+    padding: 0;
+    line-height: 0;
+    text-align: center;
+    color: $blanc-1;
+    background-color: $noir;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+  }
+
   &.btn-standard {
     position: relative;
     border-radius: 2rem;
@@ -55,6 +66,16 @@
       }
     }
 
+    &.extra-little {
+      padding: 0 2.5rem 0 1rem;
+      line-height: 2.5rem;
+      font-size: 1rem;
+      .icon {
+        font-size: 0.8rem !important;
+        line-height: 2.5rem;
+      }
+    }
+
     &.btn-rose {
       border-color: $rose-1;
     }
@@ -65,6 +86,10 @@
       &.btn-negatif {
         background-color: $bleu-1;
         color: $blanc-1;
+
+        .icon {
+          color: $blanc-1;
+        }
       }
     }
 

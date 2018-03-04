@@ -1,4 +1,4 @@
-function initMenu() {
+(function initMenu() {
 
   const menuElmt = document.getElementById('mobile-menu');
   const openElmt = document.getElementById('open-menu');
@@ -16,6 +16,4 @@ function initMenu() {
     const classList = menuElmt.classList;
     classList.remove('is-open');
   }
-}
-
-initMenu();
+})();

@@ -1,5 +1,5 @@
 #mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -100%;
   opacity: 0;
@@ -8,6 +8,8 @@
   background: white;
   transition: left 0.3s ease-in, opacity 0.2s ease-in;
   z-index: 1000;
+  max-height: 100vh;
+  overflow: auto;
 
   &.is-open {
     left: 0;

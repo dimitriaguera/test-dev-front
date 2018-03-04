@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'custom_font_icones';
-  src:  url('fonts/custom_font_icones.eot?jlppuq');
-  src:  url('fonts/custom_font_icones.eot?jlppuq#iefix') format('embedded-opentype'),
-  url('fonts/custom_font_icones.ttf?jlppuq') format('truetype'),
-  url('fonts/custom_font_icones.woff?jlppuq') format('woff'),
-  url('fonts/custom_font_icones.svg?jlppuq#custom_font_icones') format('svg');
+  src:  url('fonts/custom_font_icones.eot?1atw1x');
+  src:  url('fonts/custom_font_icones.eot?1atw1x#iefix') format('embedded-opentype'),
+  url('fonts/custom_font_icones.ttf?1atw1x') format('truetype'),
+  url('fonts/custom_font_icones.woff?1atw1x') format('woff'),
+  url('fonts/custom_font_icones.svg?1atw1x#custom_font_icones') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,15 @@
 
 .icon-menu:before {
   content: "\e914";
+}
+.icon-phone:before {
+  content: "\e916";
+}
+.icon-trash-2:before {
+  content: "\e917";
+}
+.icon-users:before {
+  content: "\e918";
 }
 .icon-x:before {
   content: "\e915";
@@ -90,4 +99,7 @@
 }
 .icon-YouTube:before {
   content: "\e913";
+}
+.icon-bullhorn:before {
+  content: "\e91a";
 }

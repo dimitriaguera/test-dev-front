@@ -11,7 +11,7 @@
   <body>
 
   <header>
-    <div id="background-overlay" class="bleu-gradient"></div>
+
     <div id="header-menu">
       <div id="logo">
         <span class="icon-logo_fakecity"></span>
@@ -37,31 +37,165 @@
       <button id="open-menu" class="btn btn-menu btn-open" type="button"><span class="icon-menu"></span></button>
     </div>
 
-    <div id="header-content-wrapper">
-        <div class="head-content-logo">
-            <span class="pastille icon-pastille"></span>
-            <span class="fleur icon-flower center"></span>
-        </div>
-        <div class="head-content-title">
-          <h1>La mystérieuse</h1>
-        </div>
-        <div class="head-content-abstract">
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</span>
-        </div>
-        <div class="head-content-fleche">
-          <span class="icon-fleche"></span>
-        </div>
+    <div id="slider-container" class="slider-container">
+      <div id="slide-1" class="slide"></div>
+      <div id="slide-2" class="slide"></div>
+      <div id="slide-3" class="slide"></div>
     </div>
 
+    <div id="background-overlay-1" class="bleu background-overlay visible"></div>
+    <div id="background-overlay-2" class="marron background-overlay"></div>
+    <div id="background-overlay-3" class="rose background-overlay"></div>
+
+    <div id="slider-caption-1" class="slider-caption header-content-wrapper">
+      <div class="slider-caption-element head-content-logo">
+          <span class="pastille icon-pastille"></span>
+          <span class="fleur icon-flower center"></span>
+      </div>
+      <div class="slider-caption-element head-content-title">
+        <h1>La mystérieuse</h1>
+      </div>
+      <div class="slider-caption-element head-content-abstract">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</span>
+      </div>
+      <div class="slider-caption-element head-content-fleche">
+        <span class="icon-fleche"></span>
+      </div>
+      <div id="m-b-1" class="marqueur bleu">
+        <span class="bg-icon icon-marqueur"></span>
+        <span class="wrapper-content">
+          <span class="inner-content">
+            <span class="big-icon icon-carte_interactive"></span>
+            <span class="info-bulle">
+              <span class="title">Balades pédestres</span>
+              <span class="text">Découvrez les forêts, le patrimoine</span>
+              <a class="btn btn-standard btn-bleu btn-negatif extra-little" title="Localiser" href="#">
+                Localiser
+                <span class="icon icon-fleche"></span>
+              </a>
+            </span>
+            <button role="button" class="close-menu-marqueur btn btn-round"><span class="icon icon-x"></span></button>
+          </span>
+        </span>
+      </div>
+      <div id="m-b-2" class="marqueur bleu">
+        <span class="bg-icon icon-marqueur"></span>
+        <span class="wrapper-content">
+            <span class="inner-content">
+              <span class="big-icon icon-brochures"></span>
+              <span class="info-bulle">
+                <span class="title">Orientation</span>
+                <span class="text">Découvrez les forêts, le patrimoine</span>
+                <a class="btn btn-standard btn-bleu btn-negatif extra-little" title="Localiser" href="#">
+                  Localiser
+                  <span class="icon icon-fleche"></span>
+                </a>
+              </span>
+              <button role="button" class="close-menu-marqueur btn btn-round"><span class="icon icon-x"></span></button>
+            </span>
+          </span>
+      </div>
+      <div id="m-b-3" class="marqueur bleu">
+        <span class="bg-icon icon-marqueur"></span>
+        <span class="wrapper-content">
+            <span class="inner-content">
+              <span class="big-icon icon-voiture"></span>
+              <span class="info-bulle">
+                <span class="title">Véhicules</span>
+                <span class="text">Découvrez les forêts, le patrimoine</span>
+                <a class="btn btn-standard btn-bleu btn-negatif extra-little" title="Localiser" href="#">
+                  Localiser
+                  <span class="icon icon-fleche"></span>
+                </a>
+              </span>
+              <button role="button" class="close-menu-marqueur btn btn-round"><span class="icon icon-x"></span></button>
+            </span>
+          </span>
+      </div>
+    </div>
+
+    <div id="slider-caption-2" class="slider-caption header-content-wrapper">
+      <div class="slider-caption-element head-content-logo">
+        <span class="pastille icon-pastille"></span>
+        <span class="fleur icon-flower center"></span>
+      </div>
+      <div class="slider-caption-element head-content-title">
+        <h1>La gourmande</h1>
+      </div>
+      <div class="slider-caption-element head-content-abstract">
+        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</span>
+      </div>
+      <div class="slider-caption-element head-content-fleche">
+        <span class="icon-fleche"></span>
+      </div>
+      <div id="m-m-1" class="marqueur marron">
+        <span class="bg-icon icon-marqueur"></span>
+        <span class="wrapper-content">
+          <span class="inner-content">
+            <span class="big-icon icon-carte_interactive"></span>
+            <span class="info-bulle">
+              <span class="title">Balades pédestres</span>
+              <span class="text">Découvrez les forêts, le patrimoine</span>
+              <a class="btn btn-standard btn-bleu btn-negatif extra-little" title="Localiser" href="#">
+                Localiser
+                <span class="icon icon-fleche"></span>
+              </a>
+            </span>
+            <button role="button" class="close-menu-marqueur btn btn-round"><span class="icon icon-x"></span></button>
+          </span>
+        </span>
+      </div>
+      <div id="m-m-2" class="marqueur marron">
+        <span class="bg-icon icon-marqueur"></span>
+        <span class="wrapper-content">
+            <span class="inner-content">
+              <span class="big-icon icon-brochures"></span>
+              <span class="info-bulle">
+                <span class="title">Orientation</span>
+                <span class="text">Découvrez les forêts, le patrimoine</span>
+                <a class="btn btn-standard btn-bleu btn-negatif extra-little" title="Localiser" href="#">
+                  Localiser
+                  <span class="icon icon-fleche"></span>
+                </a>
+              </span>
+              <button role="button" class="close-menu-marqueur btn btn-round"><span class="icon icon-x"></span></button>
+            </span>
+          </span>
+      </div>
+      <div id="m-m-3" class="marqueur marron">
+        <span class="bg-icon icon-marqueur"></span>
+        <span class="wrapper-content">
+            <span class="inner-content">
+              <span class="big-icon icon-voiture"></span>
+              <span class="info-bulle">
+                <span class="title">Véhicules</span>
+                <span class="text">Découvrez les forêts, le patrimoine</span>
+                <a class="btn btn-standard btn-bleu btn-negatif extra-little" title="Localiser" href="#">
+                  Localiser
+                  <span class="icon icon-fleche"></span>
+                </a>
+              </span>
+              <button role="button" class="close-menu-marqueur btn btn-round"><span class="icon icon-x"></span></button>
+            </span>
+          </span>
+      </div>
+    </div>
+
+
   </header>
+
+
+
+
+
 
   <section>
     <h2 class="section-title rose">
       <span class="icon-title icon-calendar"></span>
       <span class="title">Agenda</span>
     </h2>
-    <div class="flex-row has-pad-20 maxed x-center">
-        <div class="card-img">
+    <div class="flex-row has-pad-20 maxed x-center show-elmt-container">
+        <div class="card-img show-elmt show-elmt-1">
           <div class="card-img-illus">
             <div class="img-inner"><img title="Festival Grelin Grenade" src="photos/festival_agenda.jpg" /></div>
           </div>
@@ -75,7 +209,7 @@
             <span class="icon icon-fleche"></span>
           </div>
         </div>
-        <div class="card-img">
+        <div class="card-img show-elmt show-elmt-2">
           <div class="card-img-illus">
             <div class="img-inner"><img title="Spectacle Théâtre" src="photos/theatre_agenda.jpg" /></div>
           </div>
@@ -89,7 +223,7 @@
             <span class="icon icon-fleche"></span>
           </div>
         </div>
-        <div class="card-img">
+        <div class="card-img show-elmt show-elmt-3">
           <div class="card-img-illus">
             <div class="img-inner"><img title="Stage Photographie" src="photos/stage_agenda.jpg" /></div>
           </div>
@@ -357,7 +491,8 @@
     </nav>
   </div>
 
-  <script>require('scripts/menu');</script>
+  <!--<script>require('scripts/menu');</script>-->
+  <!--<script>require('scripts/marqueur');</script>-->
 
   </body>
 </html>
