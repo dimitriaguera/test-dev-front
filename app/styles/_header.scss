@@ -15,6 +15,7 @@ header {
     color: $blanc-1;
     justify-content: center;
     align-items: center;
+    z-index: 11;
 
     .head-content-logo {
       position: relative;
