@@ -9,5 +9,10 @@ exports.plugins = {
     ignore: [
       /^node_modules/,
     ]
+  },
+  postcss: {
+    processors: [
+      require('autoprefixer')(['last 8 versions']),
+    ]
   }
 };
