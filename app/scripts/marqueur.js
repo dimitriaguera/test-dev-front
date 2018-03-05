@@ -1,7 +1,8 @@
+/* global module */
+
 const initMarqueur = function( Slider ) {
 
   const marqueurArray = document.getElementsByClassName('marqueur');
-  const listenersToRemove = [];
 
   for( var i = 0, l = marqueurArray.length; i < l; i++ ) {
     const mElmt = marqueurArray[i];
@@ -10,7 +11,7 @@ const initMarqueur = function( Slider ) {
     //closeElmt.addEventListener("click", closeClickHandler.bind(mElmt), false);
   }
 
-  function openClickHandler(e) {
+  function openClickHandler() {
     this.removeEventListener("click", openClickHandler, false);
     this.addEventListener("click", closeClickHandler.bind(this), false);
     this.classList.add('is-open');

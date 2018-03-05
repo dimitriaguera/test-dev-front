@@ -7,12 +7,12 @@
   openElmt.addEventListener("click", openClickHandler, false);
   closeElmt.addEventListener("click", closeClickHandler, false);
 
-  function openClickHandler(e) {
+  function openClickHandler() {
     const classList = menuElmt.classList;
     classList.add('is-open');
   }
 
-  function closeClickHandler(e) {
+  function closeClickHandler() {
     const classList = menuElmt.classList;
     classList.remove('is-open');
   }

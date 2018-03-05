@@ -205,10 +205,6 @@
       }
     }
   }
-
-  @include breakpoint(tablet) {
-    //padding: 2rem;
-  }
 }
 
 .card-icones {
@@ -500,7 +496,6 @@
       }
 
       .inner-content {
-        //from 4.3em
         width: 12em;
         height: 12em;
         margin-left: -4.4em;

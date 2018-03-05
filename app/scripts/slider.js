@@ -1,3 +1,5 @@
+/* global module, Elastic */
+
 const sliderInit = function(simpleslider, TimelineLite){
 
   const container = document.getElementById('slider-container');
@@ -23,7 +25,7 @@ const sliderInit = function(simpleslider, TimelineLite){
     init: -100,
     show: 0,
     end: 100,
-    ease: Easie.circInOut,
+    ease: circInOut,
     onChange: handlerOnChange,
     onChangeEnd: handleOnChangeEnd
   });
@@ -36,6 +38,19 @@ const sliderInit = function(simpleslider, TimelineLite){
       Slider.resume();
     });
   }, 1500);
+
+  /*
+  Fonction d'ease copiée de la librairie suivant :
+  Robert Penner's Easing Equations in CoffeeScript
+  http://robertpenner.com/easing/
+  */
+  function circInOut (time, begin, change, duration) {
+    if ((time = time / (duration / 2)) < 1) {
+      return -change / 2 * (Math.sqrt(1 - time * time) - 1) + begin;
+    } else {
+      return change / 2 * (Math.sqrt(1 - (time -= 2) * time) + 1) + begin;
+    }
+  }
 
   function handlerOnChange(index, nextIndex) {
     pagination.classList.add('running');
