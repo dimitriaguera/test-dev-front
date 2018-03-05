@@ -238,6 +238,11 @@
       border-radius: 50%;
       line-height: 1;
 
+      &.icon-phone {
+        font-size: 4rem;
+        line-height: 1.9;
+      }
+
       &.negatif {
         background-color: $blanc-1;
         color: $marron-1;

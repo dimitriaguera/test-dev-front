@@ -11,6 +11,12 @@
   max-height: 100vh;
   overflow: auto;
 
+  #close-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   &.is-open {
     left: 0;
     opacity: 1;
@@ -19,6 +25,15 @@
       position: fixed;
       top: 0;
       left: 0;
+      z-index: 1;
+    }
+
+    #nav-mobile-menu {
+      #logo-mobile {
+        transition-delay: 0.2s;
+        transform: translateX(0);
+        opacity: 1;
+      }
     }
   }
 
@@ -26,6 +41,19 @@
     width: 800px;
     max-width: 100%;
     padding-top: 8rem;
+
+    #logo-mobile {
+      position: absolute;
+      width: 100%;
+      top: 0.5rem;
+      left: 0;
+      text-align: center;
+      font-size: 4.5em;
+      line-height: 8rem;
+      transform: translateX(-200px);
+      opacity: 0;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
 
     .nav-element {
       display: block;

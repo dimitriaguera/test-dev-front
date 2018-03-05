@@ -1,5 +1,6 @@
 header {
   display: block;
+  position: relative;
   height: 100vh;
   z-index: 1000;
 
@@ -60,7 +61,7 @@ header {
     color: $blanc-1;
     position: absolute;
     width: 100%;
-    bottom: 0.6em;
+    bottom: 0;
 
     #pagination {
       display: block;
@@ -85,8 +86,8 @@ header {
 
           .pag-element {
             display: inline-block;
-            width: 0.8em;
-            height: 0.8em;
+            width: 1em;
+            height: 1em;
             margin: 1em;
             background-color: rgba(255, 255, 255, 0.5);
             border-radius: 50px;
