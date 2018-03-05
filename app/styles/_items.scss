@@ -361,15 +361,18 @@
       transition: transform 0.5s ease;
 
       &.insta {
-        background: url("photos/instagram.jpg") no-repeat center;
+        background: url("photos/instagram.jpg") no-repeat center center;
+        background-size: cover;
       }
 
       &.fb {
-        background: url("photos/facebook.jpg") no-repeat center;
+        background: url("photos/facebook.jpg") no-repeat center center;
+        background-size: cover;
       }
 
       &.youtube {
-        background: url("photos/youtube.jpg") no-repeat center;
+        background: url("photos/youtube.jpg") no-repeat center center;
+        background-size: cover;
       }
     }
 
