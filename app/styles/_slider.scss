@@ -48,17 +48,44 @@
   }
 
   #slide-1 {
-    background: url("photos/Slider_01_visuelLaMysterieuse_noGradient.jpg") no-repeat center;
+    background: url("photos/slide_1_small.jpg") no-repeat center center;
     background-size: cover;
+    background-color: $bleu-1;
+
+    @include breakpoint(tablet) {
+      background-image: url("photos/slide_1_medium.jpg");
+    }
+
+    @include breakpoint(medium) {
+      background-image: url("photos/slide_1_big.jpg");
+    }
   }
 
   #slide-2 {
-    background: url("photos/restaurant.jpg") no-repeat center;
+    background: url("photos/slide_2_smalljpg") no-repeat center ;
     background-size: cover;
+    background-color: $marron-1;
+
+    @include breakpoint(tablet) {
+      background-image: url("photos/slide_2_medium.jpg");
+    }
+
+    @include breakpoint(medium) {
+      background-image: url("photos/slide_2_big.jpg");
+    }
   }
 
   #slide-3 {
-    background: url("photos/youtube.jpg") no-repeat center;
+    background: url("photos/slide_3_small.jpg") no-repeat center center;
     background-size: cover;
+    background-color: $rose-1;
+
+    @include breakpoint(tablet) {
+      background-image: url("photos/slide_3_medium.jpg");
+    }
+
+    @include breakpoint(medium) {
+      background-image: url("photos/slide_3_big.jpg");
+    }
   }
 }
