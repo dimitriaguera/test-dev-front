@@ -14,11 +14,18 @@
   &.is-open {
     left: 0;
     opacity: 1;
+
+    #close-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
   }
 
   #nav-mobile-menu {
     width: 800px;
     max-width: 100%;
+    padding-top: 8rem;
 
     .nav-element {
       display: block;
