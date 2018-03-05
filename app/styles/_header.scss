@@ -28,7 +28,7 @@ header {
     #head-content-logo {
       display: none;
       position: relative;
-      font-size: 9rem;
+      font-size: 5.5em;
       line-height: 0;
       bottom: 0;
       color: $bleu-1;
@@ -42,7 +42,7 @@ header {
       }
 
       @include breakpoint(desktop) {
-        font-size: 14rem;
+        font-size: 8.75em;
       }
     }
   }
@@ -56,19 +56,19 @@ header {
     color: $blanc-1;
     position: absolute;
     width: 100%;
-    bottom: 1rem;
+    bottom: 0.6em;
 
     #pagination {
       display: block;
       margin: 0;
 
       @include breakpoint(bigtablet) {
-        margin-bottom: 5rem;
+        margin-bottom: 3.125em;
         //display: block;
       }
 
       @include breakpoint(desktop) {
-        margin-bottom: 20rem;
+        margin-bottom: 12em;
       }
 
       ol {
@@ -81,17 +81,17 @@ header {
 
           .pag-element {
             display: inline-block;
-            width: 1.2rem;
-            height: 1.2rem;
-            margin: 1rem;
+            width: 0.8em;
+            height: 0.8em;
+            margin: 1em;
             background-color: rgba(255, 255, 255, 0.5);
             border-radius: 50px;
             border: none;
             cursor: auto;
 
             @include breakpoint(bigtablet) {
-              width: 2rem;
-              height: 2rem;
+              width: 1.2em;
+              height: 1.2em;
             }
 
             &.active {
@@ -112,13 +112,16 @@ header {
     }
 
     #head-content-fleche {
-      font-size: 4rem;
-      margin-bottom: 1rem;
+      font-size: 2.5em;
+      margin-bottom: 0;
       display: none;
 
       @include breakpoint(bigtablet) {
-        margin-bottom: 5rem;
         display: block;
+      }
+
+      @include breakpoint(desktop) {
+        margin-bottom: 2.5em;
       }
 
       #fleche {
@@ -169,10 +172,10 @@ header {
         //padding-top: 10rem;
 
         .head-content-title {
-          margin-top: -5rem;
+          margin-top: -3.125em;
 
           h1 {
-            font-size: 16rem;
+            font-size: 10em;
           }
         }
       }

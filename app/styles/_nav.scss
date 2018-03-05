@@ -86,7 +86,7 @@
     }
   }
 
-  @include breakpoint(desktop) {
+  @include breakpoint(medium) {
     display: none;
   }
 }
@@ -108,7 +108,7 @@
     background: rgba(255, 255, 255, 0.9);
   }
 
-  @include breakpoint(desktop) {
+  @include breakpoint(medium) {
     background-color: $color-bg-menu-large;
 
     #open-menu {
@@ -118,11 +118,11 @@
     #logo {
       display: inline-block;
       position: absolute;
-      margin-top: 0.5em;
+      margin-top: 0.3em;
       left: 10%;
 
       span {
-        font-size: 4em;
+        font-size: 3.5em;
       }
     }
 
@@ -140,8 +140,8 @@
         a,
         &.search-nav li{
           display: inline-block;
-          line-height: 5.5em;
-          font-size: 0.7em;
+          line-height: 5em;
+          font-size: 0.6em;
           padding: 0 1em;
         }
 

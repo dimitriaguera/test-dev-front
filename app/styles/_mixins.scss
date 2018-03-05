@@ -22,6 +22,9 @@
     @media (min-width: 1800px) { @content ; }
   }
   @else if $point == desktop {
+    @media (min-width: 1400px) { @content ; }
+  }
+  @else if $point == medium {
     @media (min-width: 1200px) { @content ; }
   }
   @else if $point == bigtablet {
