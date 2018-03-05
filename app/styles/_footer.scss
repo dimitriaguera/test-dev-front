@@ -3,6 +3,10 @@ footer {
   background-color: $marron-1;
   text-align: right;
 
+  @include breakpoint(medium) {
+    padding-right: 10%;
+  }
+
   .footer-section {
     display: inline-block;
     width: 320px;
