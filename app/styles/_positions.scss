@@ -1,20 +1,60 @@
 #m-b-1,
 #m-b-2,
-#m-b-3 {
+#m-b-3,
+#m-m-1,
+#m-m-2,
+#m-m-3,
+#m-r-1,
+#m-r-2,
+#m-r-3 {
   position: absolute;
 }
 
 #m-b-1 {
-  top: 85%;
+  top: 65%;
   left: 5%;
 }
 
 #m-b-2 {
-  top: 70%;
+  top: 50%;
   left: 25%;
 }
 
 #m-b-3 {
-  top: 80%;
+  top: 60%;
+  left: 80%;
+}
+
+
+
+#m-m-1 {
+  top: 20%;
+  left: 10%;
+}
+
+#m-m-2 {
+  top: 50%;
+  left: 70%;
+}
+
+#m-m-3 {
+  top: 0%;
+  left: 80%;
+}
+
+
+
+#m-r-1 {
+  top: 20%;
+  left: 10%;
+}
+
+#m-r-2 {
+  top: 60%;
+  left: 30%;
+}
+
+#m-r-3 {
+  top: 30%;
   left: 80%;
 }

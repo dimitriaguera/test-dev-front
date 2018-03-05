@@ -44,6 +44,7 @@
           width: 100%;
           color: $noir-1;
           cursor: pointer;
+          letter-spacing: 0.15em;
         }
       }
 
@@ -88,7 +89,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   z-index: 999;
 
   #logo,
@@ -142,6 +143,10 @@
 
           a {
             color: $noir-1;
+            letter-spacing: 0.15em;
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
 

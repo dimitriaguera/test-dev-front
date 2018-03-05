@@ -8,6 +8,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
 
   &.btn-menu {
     display: inline-block;
@@ -78,14 +83,41 @@
 
     &.btn-rose {
       border-color: $rose-1;
+
+      &:hover {
+        border-color: $rose-c;
+        color: $rose-c;
+      }
+
+      &.btn-negatif {
+        background-color: $rose-1;
+        color: $blanc-1;
+
+        &:hover {
+          background-color: $rose-c;
+        }
+
+        .icon {
+          color: $blanc-1;
+        }
+      }
     }
 
     &.btn-bleu {
       border-color: $bleu-1;
 
+      &:hover {
+        border-color: $bleu-c;
+        color: $bleu-c;
+      }
+
       &.btn-negatif {
         background-color: $bleu-1;
         color: $blanc-1;
+
+        &:hover {
+          background-color: $bleu-c;
+        }
 
         .icon {
           color: $blanc-1;
@@ -105,6 +137,24 @@
 
     &.btn-marron {
       border-color: $marron-1;
+
+      &:hover {
+        border-color: $marron-c;
+        color: $marron-c;
+      }
+
+      &.btn-negatif {
+        background-color: $marron-1;
+        color: $blanc-1;
+
+        &:hover {
+          background-color: $marron-c;
+        }
+
+        .icon {
+          color: $blanc-1;
+        }
+      }
     }
   }
 }
