@@ -38,7 +38,7 @@
     line-height: 0;
     text-align: center;
     color: $blanc-1;
-    background-color: $noir;
+    background-color: $noir-1;
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 50%;
@@ -50,8 +50,8 @@
     line-height: 3.7rem;
     text-transform: uppercase;
     padding: 0 4rem 0 2.5rem;
-    border: 1px solid $noir;
-    color: $noir;
+    border: 1px solid $noir-1;
+    color: $noir-1;
     margin-bottom: 1rem;
 
     .icon {
@@ -61,6 +61,13 @@
       right: 1rem;
       transform: rotate(-90deg);
       line-height: 3.7rem;
+    }
+
+    &:hover {
+      .icon {
+        animation-duration: 0.5s;
+        animation-name: fleche;
+      }
     }
 
     &.little {
